@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- loading screen -->
+
+    <div class="bg-black w-100 vh-100 d-flex justify-content-center align-items-center " id="loading_screen">
+        <!-- <i class="fa-solid fa-spinner fa-spin fa-5x text-white "></i> -->
+        <span class="loader"></span>
+    </div>
+
+    <!-- side bar -->
+
+    <div class="side-box d-flex position-fixed fixed-top">
+
+
+        <div class="nav-content bg-black ">
+            <div class="nav-heading">
+                <a onclick="displaySearch()" href="#">Search</a>
+                <a onclick=" displayCatgroies()" href="#">Categories</a>
+                <a onclick="getArea()" href="#">Area</a>
+                <a onclick="getIngredients()" href="#">Ingredients</a>
+                <a onclick="displayContact()" href="#">Contact Us</a>
+            </div>
+
+
+            <div class="icons text-white">
+                <i class="fa-brands fa-facebook "> </i>
+                <i class="fa-brands fa-twitter "> </i>
+                <i class="fa-solid fa-share-nodes"> </i>
+                <p class="pb-3">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+
+
+        <div class="side-bar">
+            <img src="images/logo.png" alt="" class="w-100">
+            <i class="fa-solid fa-bars open-nav fs-1 "></i>
+            <i class="fa-solid fa-close fs-1 close-nav "></i>
+            <div class="icons ">
+                <i class="fa-solid fa-globe d-block  "> </i>
+                <i class="fa-solid fa-share-nodes"> </i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- display content -->
+
+    <section class="content ">
+        <div class="container">
+            <div class="row g-3" id="rowData">
+
+            </div>
+            <div class="row g-3" id="pages"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
